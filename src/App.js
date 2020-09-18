@@ -8,7 +8,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <div className="input">
+                <div className="container-id">
                     <center>
                         <input id="input-id" placeholder="Add to the list" />
                     </center>
