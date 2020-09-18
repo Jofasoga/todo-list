@@ -25,7 +25,6 @@
 .container-id {
     margin-top: 10px;
     display: flex;
-    flex: 4;
     flex-direction: column;
 }
 
