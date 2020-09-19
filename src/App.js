@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import todo from "./logo.svg"
 import "./App.css";
 import { Button } from "react-bootstrap";
 
@@ -27,7 +28,7 @@ export default class App extends React.Component {
                 <header className="App-header">
                     <center>
                         {" "}
-                        <img src={logo} className="App-logo" alt="logo" />
+                        <img src={todo} className="App-logo" alt="todo" />
                     </center>
                 </header>
                 <div className="container-id">

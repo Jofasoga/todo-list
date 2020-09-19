@@ -1,11 +1,4 @@
 .App {
-    background-image: linear-gradient(
-        to right,
-        rgba(136, 42, 42, 0.788),
-        rgba(255, 0, 0, 1),
-        rgb(226, 226, 2),
-        red
-    );
     min-height: 100vh;
     display: flex;
     padding-top: 50px;
