@@ -28,7 +28,11 @@
     flex-direction: column;
 }
 
+.form {
+}
+
 #input-id {
+    font-size: 25px;
     width: 800px;
     height: 50px;
     margin-top: 70px;
@@ -45,4 +49,8 @@
     width: 100px;
     border: none;
     border-radius: 20px;
+}
+
+.list-container {
+    font-family: "Bangers", cursive;
 }

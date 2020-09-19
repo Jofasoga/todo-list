@@ -10,7 +10,15 @@ export function add() {
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            todoList: [],
+            activeItem: {
+                id: null,
+                title: '',
+                completed: false,
+            },
+            editing: false,
+        };
     }
 
     render() {
@@ -19,12 +27,14 @@ export default class App extends React.Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <div className="container-id">
-                        <center>
-                            <input
-                                id="input-id"
-                                placeholder="Add to the list"
-                            />
-                        </center>
+                        <form className="form"> 
+                            <center>
+                                <input
+                                    id="input-id"
+                                    placeholder="Add to the list"
+                                />
+                            </center>
+                        </form>
                         <Button className="btn" onClick={() => add()}>
                             ADD
                         </Button>
