@@ -31,7 +31,11 @@ export default class App extends React.Component {
                     </center>
                 </header>
                 <div className="container-id">
-                    <form className="form">
+                    <form
+                        className="form"
+                        action="http://localhost:8000/list/"
+                        method="POST"
+                    >
                         <center>
                             <input
                                 type="search"
