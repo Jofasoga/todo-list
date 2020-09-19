@@ -36,19 +36,19 @@
     width: 800px;
     height: 50px;
     margin-top: 70px;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: black;
     background-color: whitesmoke;
 }
 
-.btn {
+#btn {
+    background-color: #007bff   ;
     position: absolute;
     height: 49px;
     margin-top: 70px;
     margin-left: 1100px;
     width: 100px;
-    border: none;
-    border-radius: 20px;
+    border-margin: 8px;
 }
 
 .list-container {

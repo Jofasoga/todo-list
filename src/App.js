@@ -14,7 +14,7 @@ export default class App extends React.Component {
             todoList: [],
             activeItem: {
                 id: null,
-                title: '',
+                title: "",
                 completed: false,
             },
             editing: false,
@@ -27,17 +27,21 @@ export default class App extends React.Component {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <div className="container-id">
-                        <form className="form"> 
+                        <form className="form">
                             <center>
                                 <input
+                                    type="search"
                                     id="input-id"
                                     placeholder="Add to the list"
                                 />
                             </center>
                         </form>
-                        <Button className="btn" onClick={() => add()}>
-                            ADD
-                        </Button>
+                        <input
+                            type="submit"
+                            value="ADD"
+                            id="btn"
+                            onClick={() => add()}
+                        />
                     </div>
                 </header>
             </div>
