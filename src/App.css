@@ -1,8 +1,4 @@
-.App-logo {
-    height: 150px;
-}
-
-.App-header {
+.App {
     background-image: linear-gradient(
         to right,
         rgba(136, 42, 42, 0.788),
@@ -16,6 +12,9 @@
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+.App-logo {
+    height: 150px;
 }
 
 .App-link {
@@ -42,13 +41,14 @@
 }
 
 #btn {
-    background-color: #007bff   ;
+    background-color: #007bff;
     position: absolute;
     height: 49px;
     margin-top: 70px;
     margin-left: 1100px;
     width: 100px;
-    border-margin: 8px;
+    border: black;
+    border-radius: 8px;
 }
 
 .list-container {

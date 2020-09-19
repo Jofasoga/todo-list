@@ -25,25 +25,28 @@ export default class App extends React.Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <div className="container-id">
-                        <form className="form">
-                            <center>
-                                <input
-                                    type="search"
-                                    id="input-id"
-                                    placeholder="Add to the list"
-                                />
-                            </center>
-                        </form>
-                        <input
-                            type="submit"
-                            value="ADD"
-                            id="btn"
-                            onClick={() => add()}
-                        />
-                    </div>
+                    <center>
+                        {" "}
+                        <img src={logo} className="App-logo" alt="logo" />
+                    </center>
                 </header>
+                <div className="container-id">
+                    <form className="form">
+                        <center>
+                            <input
+                                type="search"
+                                id="input-id"
+                                placeholder="Add to the list"
+                            />
+                        </center>
+                    </form>
+                    <input
+                        type="submit"
+                        value="ADD"
+                        id="btn"
+                        onClick={() => add()}
+                    />
+                </div>
             </div>
         );
     }
