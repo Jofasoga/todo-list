@@ -25,14 +25,8 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <div id="form">
-                    <header className="App-header">
-                        <center>
-                            {" "}
-                            <img src={todo} className="App-logo" alt="todo" />
-                        </center>
-                    </header>
-                    <div className="form-wrapper">
+                <div id="task-container">
+                    <div id="form-wrapper">
                         <form id="form">
                             <div className="flex-wrapper">
                                 <div style={{ flex: 6 }}>
@@ -54,9 +48,7 @@ export default class App extends React.Component {
                             </div>
                         </form>
                     </div>
-                    <div id="list-container">
-
-                    </div>
+                    <div id="list-wrapper"></div>
                 </div>
             </div>
         );
