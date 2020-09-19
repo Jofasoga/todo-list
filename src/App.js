@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import todo from "./logo.svg"
+import todo from "./logo.svg";
 import "./App.css";
 import { Button } from "react-bootstrap";
 
@@ -24,33 +24,39 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <center>
-                        {" "}
-                        <img src={todo} className="App-logo" alt="todo" />
-                    </center>
-                </header>
-                <div className="container-id">
-                    <form
-                        className="form"
-                        action="http://localhost:8000/list/"
-                        method="POST"
-                    >
+            <div className="container">
+                <div id="form">
+                    <header className="App-header">
                         <center>
-                            <input
-                                type="search"
-                                id="input-id"
-                                placeholder="Add to the list"
-                            />
+                            {" "}
+                            <img src={todo} className="App-logo" alt="todo" />
                         </center>
-                    </form>
-                    <input
-                        type="submit"
-                        value="ADD"
-                        id="btn"
-                        onClick={() => add()}
-                    />
+                    </header>
+                    <div className="form-wrapper">
+                        <form id="form">
+                            <div className="flex-wrapper">
+                                <div style={{ flex: 6 }}>
+                                    <input
+                                        className="form-control"
+                                        id="title"
+                                        type="text"
+                                        placeholder="Add task to the list"
+                                    />
+                                </div>
+                                <div style={{ flex: 1 }}>
+                                    <input
+                                        id="submit"
+                                        className="btn btn-warning"
+                                        type="submit"
+                                        name="Add"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="list-container">
+
+                    </div>
                 </div>
             </div>
         );
