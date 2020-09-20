@@ -1,20 +1,11 @@
-from django.urls import path, include
-from django.contrib.auth.models import User
-from .models import Api
-from rest_framework import routers, serializers, viewsets
+from django.urls import path
 from . import views
-class UserSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Api
-        fields = ['email', ]
-
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-router = routers.DefaultRouter()
-router.register(r'list', UserViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+	path('', views.apiOverview, name="api-overview"),
+	path('task-list/', views.taskList, name="task-list"),
+	path('task-detail/<str:pk>/', views.taskDetail, name="task-detail"),
+	path('task-create/', views.taskCreate, name="task-create"),
+	path('task-update/<str:pk>/', views.taskUpdate, name="task-update"),
+	path('task-delete/<str:pk>/', views.taskDelete, name="task-delete"),
 ]
