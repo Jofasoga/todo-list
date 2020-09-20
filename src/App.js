@@ -19,7 +19,16 @@ export default class App extends React.Component {
                 completed: false,
             },
             editing: false,
-        };
+        }
+        this.fetchTasks = this.fetchTasks.bind(this)
+    };
+
+    add() {
+        this.fetchTasks()
+    }
+
+    fetchTasks() {
+        console.log("Fetching...")
     }
 
     render() {
