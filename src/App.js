@@ -22,6 +22,9 @@ class App extends React.Component {
     }
     fetchTasks() {
         console.log("Fetching...");
+        fetch("http://127.0.0.1:8000/task-list/")
+            .then((response) => response.json)
+            .then((data) => console.log("Data", data));
     }
     render() {
         return (
