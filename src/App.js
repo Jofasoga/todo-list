@@ -1,14 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
-import todo from "./logo.svg";
 import "./App.css";
-import { Button } from "react-bootstrap";
 
-export function add() {
-    console.log("button clicked");
-}
-
-export default class App extends React.Component {
+class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,18 +13,16 @@ export default class App extends React.Component {
                 completed: false,
             },
             editing: false,
-        }
-        this.fetchTasks = this.fetchTasks.bind(this)
-    };
-
-    add() {
-        this.fetchTasks()
+        };
+        this.fetchTasks = this.fetchTasks.bind(this);
     }
 
+    componentWillMount() {
+        this.fetchTasks();
+    }
     fetchTasks() {
-        console.log("Fetching...")
+        console.log("Fetching...");
     }
-
     render() {
         return (
             <div className="container">
@@ -63,3 +55,5 @@ export default class App extends React.Component {
         );
     }
 }
+
+export default App;
